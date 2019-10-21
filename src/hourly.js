@@ -1,0 +1,14 @@
+const input = require("readline-sync");
+const hourlyWage = input.question("Hourly wage: ");
+console.log();
+const monday = input.question("Monday: ");
+const tuesday = input.question("Tuesday: ");
+const wednesday = input.question("Wednesday: ");
+const thursday = input.question("Thursday: ");
+const friday = input.question("Friday: ");
+const saturday = input.question("Saturday: ");
+const sunday = input.question("Sunday: ");
+console.log();
+var wages = hourlyWage*monday+hourlyWage*tuesday+hourlyWage*wednesday+hourlyWage*thursday+hourlyWage*friday+hourlyWage*saturday+hourlyWage*sunday;
+wages = parseFloat(Math.round(wages*100)/100).toFixed(2);
+console.log("You'll make $"+wages+" this week.");

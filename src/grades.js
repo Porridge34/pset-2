@@ -1,0 +1,16 @@
+const input = require("readline-sync");
+let homework1 = input.question("\n"+"Enter three homework grades."+"\n");
+let homework2 = input.question();
+let homework3 = input.question();
+console.log();
+let quiz1 = input.question("Enter three quiz grades."+"\n");
+let quiz2 = input.question();
+let quiz3 = input.question();
+console.log();
+let test1 = input.question("Enter three test grades."+"\n");
+let test2 = input.question();
+let test3 = input.question();
+console.log();
+var mpGrade = ((parseFloat(homework1)+parseFloat(homework2)+parseFloat(homework3))/3)*0.15+((parseFloat(quiz1)+parseFloat(quiz2)+parseFloat(quiz3))/3)*0.35+((parseFloat(test1)+parseFloat(test2)+parseFloat(test3))/3)*0.50;
+mpGrade = parseFloat(Math.round(mpGrade*100)/100).toFixed(2);
+console.log("Your marking period grade is "+mpGrade+"%.");
