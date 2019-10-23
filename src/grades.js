@@ -1,3 +1,4 @@
+console.log();
 const input = require("readline-sync");
 let homework1 = input.question("\n"+"Enter three homework grades."+"\n");
 let homework2 = input.question();

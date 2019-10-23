@@ -1,3 +1,4 @@
+console.log();
 const input = require("readline-sync");
 const width = input.question("Width: ");
 const length = input.question("Length: ");

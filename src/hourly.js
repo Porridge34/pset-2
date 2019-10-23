@@ -1,3 +1,4 @@
+console.log();
 const input = require("readline-sync");
 const hourlyWage = input.question("Hourly wage: ");
 console.log();

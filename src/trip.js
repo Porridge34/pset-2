@@ -1,0 +1,11 @@
+console.log();
+const input = require("readline-sync");
+const students = input.question("Students: ");
+const teachers = input.question("Teachers: ");
+const bus_capacity = input.question("Bus capacity: ");
+let buses_needed = (parseFloat(students)+parseFloat(teachers))/bus_capacity;
+buses_needed = Math.ceil(buses_needed);
+let leftover_passengers = buses_needed*bus_capacity-(parseFloat(students)+parseFloat(teachers));
+leftover_passengers = bus_capacity-leftover_passengers;
+console.log();
+console.log(buses_needed+" bus(es) is (are) needed, with "+leftover_passengers+" passenger(s) on the last bus.");

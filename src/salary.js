@@ -1,0 +1,12 @@
+console.log();
+const input = require("readline-sync");
+let annual_salary = input.question("Annual salary: ");
+const four01k_contribution = 0.07*annual_salary;
+annual_salary = annual_salary-four01k_contribution;
+const federal_income_tax = 0.157*annual_salary;
+const state_income_tax = 0.0447*annual_salary;
+const social_security_tax = 0.062*annual_salary;
+const medicare_tax = 0.0145*annual_salary;
+var take_home_pay = (annual_salary-federal_income_tax-state_income_tax-social_security_tax-medicare_tax)/24;
+console.log();
+console.log("Your take-home pay each check will be $"+take_home_pay.toLocaleString(undefined, {maximumFractionDigits:2})+".");
