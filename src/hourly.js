@@ -11,5 +11,5 @@ const saturday = input.question("Saturday: ");
 const sunday = input.question("Sunday: ");
 console.log();
 var wages = hourlyWage*monday+hourlyWage*tuesday+hourlyWage*wednesday+hourlyWage*thursday+hourlyWage*friday+hourlyWage*saturday+hourlyWage*sunday;
-wages = parseFloat(Math.round(wages*100)/100).toFixed(2);
+wages = wages.toLocaleString("en",{maximumFractionDigits:2, minimumFractionDigits:2});
 console.log("You'll make $"+wages+" this week.");
